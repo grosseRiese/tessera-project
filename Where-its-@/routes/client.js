@@ -45,10 +45,10 @@ router.post('/buyTicket', async (req,res)=>{
 
     if (availableEvent.event_tickets_quantity !== 0){
            let ticketNum = await genereteTicket();
-           let addedTicket =  await addTicket(ticketNum, availableEvent);//availableEvent[0].event_name
+           let addedTicket =  await addTicket(ticketNum, availableEvent);
             console.log('Ticket added to db', addedTicket);
             
-           let left = await ticketsLeft(availableEvent);//availableEvent[0].event_name
+           let left = await ticketsLeft(availableEvent);
             console.log('Ticket ordered', left);
             resObj = {
                 availableEvent   : availableEvent,

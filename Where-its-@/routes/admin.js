@@ -6,7 +6,7 @@ const { admin } = require('../middleware/authMiddleware');
 router.get('/admin', admin, (req, res) => {
     res.send(JSON.stringify({ success: true, message: 'Admin account!'}));
 });
-//only admin can access those routers 'middleware'
+
 router.get('/getEvents', admin, async (req, res) => {
     console.log('----------------------');
     console.log('Req admin --- : ',req.admin);
@@ -22,7 +22,6 @@ router.get('/getEvents', admin, async (req, res) => {
 
 });
 
- //En enpoint som bara kan nås av användare med adminroll
  router.post('/addEvent', admin , async (req, res) => {
 
     try {
@@ -39,7 +38,6 @@ router.get('/getEvents', admin, async (req, res) => {
             }
 
             const event = req.body;
-            //Lägg till event i databasen
             const eventCreated = await adminAddEvent(
              resObj.event_name             = event.event_name, 
              resObj.suite                  = event.suite,

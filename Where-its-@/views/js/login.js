@@ -39,21 +39,13 @@ const loggedin = async ()=>{
         const response = await fetch(url, {
             method: 'GET',
             headers: {
-                'auth-token': 'Bearer ' + token //( the space after Bearer is important )
+                'auth-token': 'Bearer ' + token 
             }
         });
         const data = await response.json();
         return await data;
 }
-/*********
-const buttonElem = document.querySelector('#logout');
-function logout() {
-    sessionStorage.removeItem('auth');
-    location.href = '/';
-}
-buttonElem.addEventListener('click', () => {
-    logout();
-});**************/
+
 loginButton.addEventListener('click', async () => {
         const username = inputUser.value;
         const password = inputPass.value;    

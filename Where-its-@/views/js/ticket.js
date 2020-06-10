@@ -58,8 +58,8 @@ const showTicket = async()=> {
                     }).then((response) => {
                         return response.json();
                     }).then(data => {
-                      console.log('Data event buyTicket :',  data), //displayTicket(data.availableEvent[0])
-                        displayTicket(data.availableEvent,data.ticketNumber);// displayTicket(data.availableEvent[0]);
+                      console.log('Data event buyTicket :',  data),
+                        displayTicket(data.availableEvent,data.ticketNumber);
                     }).catch(error => {
                         console.error('ERROR IN Post: ', error);
                     });

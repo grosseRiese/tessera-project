@@ -16,14 +16,11 @@ async function displayAllEvents (events){
   console.log('all : ',events);
   eventElem.innerHTML += `<tr>`;
   for(event of events) {
-   // const{ event_name, suite, event_tickets_quantity, sold_tickets } = event;
-
         console.log('Obj', event);
         eventElem.innerHTML += `<td>${event.event_name}</td>
                                 <td>${event.suite}</td>
                                 <td>${event.event_tickets_quantity}</td> 
-                                <td>${event.sold_tickets}</td></tr>`;
- // for(event of events){    
+                                <td>${event.sold_tickets}</td></tr>`;  
 
  };
 }

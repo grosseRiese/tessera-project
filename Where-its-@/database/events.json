@@ -41,8 +41,8 @@
       "from_time": "22:00",
       "to_time": "00:00",
       "ticket_price": 110,
-      "event_tickets_quantity": 99,
-      "sold_tickets": 1
+      "event_tickets_quantity": 98,
+      "sold_tickets": 2
     },
     {
       "id": 5,
