@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <title>ADMIN</title>
+</head>
+<body>
+  <div class="wrapper"> 
+
+    <nav class="area-nav">
+        <a href="./index.html">
+            <img src="./assets/img/logo-colour.png" alt="logo-colour">
+        </a>
+    </nav>  <!-- / Endof nav -->
+
+    <main class="area-main"> 
+        <section class="section-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Where</th>
+                        <th>Available places</th>
+                        <th>Sold</th>
+                    </tr>
+                </thead>
+                <tbody id="events">
+                </tbody>
+            </table>
+        </section>  <!-- / Endof tblSection-->
+        <section class="section-aside">
+            <h2 class="aside-head2">Add event</h2>
+            <aside class="aside-input"></aside>
+                <article class="halv-size-input1">
+                    <input type="text" id="inputName" placeholder="Event name">
+                    <input type="text" id="inputWhere" placeholder="Where">
+                    <input type="text" id="inputDate" placeholder="Date">
+                </article>
+                <article class="halv-size-input2">
+                    <input type="text" id="inputFrome" placeholder="From" class="btn-from" >
+                    <input type="text" id="inputTo" placeholder="To" class="btn-to" >
+                    <input type="number" id="inputTickets" placeholder="Tickets" class="btn-ticket" min="1" max="9999">
+                    <input type="number" id="inputPrice" placeholder="Price" class="btn-price" min="1" max="9999">
+                    <button class="btn-add" id="addEventBtn" >Add the event</button>
+                    <button type="submit" id="logout" class="button">Logout</button>
+                </article>
+            </aside>
+        </section><!-- / Endof aside-Section-->
+   </main> <!-- / Endof main -->
+</div> 
+  <script src="./js/admin.js"></script>
+</body>
+</html>

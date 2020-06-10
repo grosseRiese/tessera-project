@@ -1,0 +1,81 @@
+@import url('../css/variables.css');
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+
+  }
+.container{
+  box-shadow: 0 0 100px  var(--main-area-4-color);
+  height: auto;
+  margin: 2em auto ;
+  width: 375px !important;
+  max-width: 320px;
+  min-width: 320px;
+  background-color: var(--main-dark-blue-color);
+  overflow: auto;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.h-head{
+  padding-top: 1.9rem;
+  text-align: center;
+  font-size: 32px;
+  line-height: 37px;
+  font-family: var(--main-font-Sansita);
+  color: var(--main-pink-color);
+  /*height: 9.1rem;*/
+}
+.event-date{
+  padding:1rem ;
+  border:1px solid var(--main-white-color);
+  text-align: center;
+  font-weight: 400;
+  line-height: 17px;
+  color:var(--main-white-color);
+  font-family: var(--main-font-Fira);
+}
+.event-name{
+  font-family: var(--main-font-Fira);
+  color:var(--main-white-color);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-shadow: 1px 1px 0px var(--main-pink-color);
+}
+.event-place{
+  font-family: var(--main-font-Fira);
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--main-gray-two-color);
+}
+.event-time{
+  font-family: var(--main-font-Fira);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-gray-one-color);
+}
+.event-price{
+  font-family: var(--main-font-Fira);
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 20px;
+  color: var(--main-green-color);
+}
+tbody tr{
+  cursor:pointer;
+}
+dl,ol,ul{
+  list-style: none !important;
+  margin-left: 0rem;
+  padding-left: 1.3rem;
+}
+
+.choosen{
+  border-bottom: 1px solid white;
+}

@@ -1,0 +1,61 @@
+@import url('../css/variables.css');
+html body {
+    height: 100vh;
+    width: 100vw;
+    border: 0px;
+    padding: 0px;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  img{
+    width: 50px;
+    height: 50px;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 375px;
+    height: 667px;
+    background-color: var(--main-orange-color);
+  }
+  .logo-section, h1, h2{
+    text-align: center;
+  }
+  
+  #ticket-number{
+    margin-bottom: 10px;
+    width: 310px;
+    height: 60px;
+    background-color: var(--main-orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid  var(--main-dark-blue-color);
+    
+  }
+  #verify-ticket,#logout{
+    width: 310px;
+    height: 60px;
+    color: var(--main-white-color);
+    font-size: 22px;
+    background-color: var(--main-dark-blue-color);
+    border: 2px solid  var(--main-dark-blue-color);
+  }
+  .response{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logout{
+    margin-top: 0.3rem;
+  }
+  

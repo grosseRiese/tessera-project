@@ -1,0 +1,170 @@
+@import url('../css/variables.css');
+
+html body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    text-align: center;
+  }
+  
+  .ticket-code{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas: "what"
+                         "what-name"
+                         "where"
+                         "where-name"
+                         "whenfromto"
+                         "ticket"
+                         "ticket-code";                     
+    box-shadow: 0 0 100px  rgba(0,0,0,0.25);
+    width: 375px !important;;
+    height: 667px;
+    max-width: 320px;
+    min-width: 320px;
+    background: linear-gradient(to bottom,
+                var(--main-pink-color) 0%,
+                var(--main-dark-blue-color) 47%) !important;
+}
+.container-main{
+  width: 16.6rem !important;
+  height: 28rem;
+  margin-top: 4.5rem;
+  margin-left: 1.7rem !important;
+  background: var(--main-white-color);
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.34);
+  border-radius: 3px;
+}
+
+.what,.where,.when, .from,.to{
+   color: var(--main-black-gray-color);
+    max-width: 100%;
+    padding: 0.5rem;
+    margin-left: 0.2rem;
+    font-family: var(--main-font-Fira);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+ /**********************************
+*         area-1
+************************************/
+.div-area-1{
+  background-color: var(--main-white-color);
+  height: 5.8rem;
+}
+ .div-area-1.what{
+  grid-area: what;
+}
+.p-what{
+  grid-area: what-name;
+  font-family: var(--main-font-Sansita);
+  font-weight: bold;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: start;
+  color: var(--main-pink-color);
+  margin-left: 1.2rem;
+}
+
+/**********************************
+*         area-2
+************************************/
+ .div-area-2{ 
+  background-color: var(--main-bgc-where-color);
+  height: 6.81rem;
+  border-top: 1px dashed var(--main-black-gray-color) ;
+}
+.where{
+  grid-area: where;
+}
+.p-where{
+font-family: var(--main-font-Sansita);
+font-weight: bold;
+font-size: 1.16rem;
+align-items: center;
+align-self: center;
+color: var(--main-black-color);
+margin-left: 1.2rem;
+}
+
+/**********************************
+*         area-3
+************************************/
+.div-area-3{
+  grid-area: whenfromto;
+  background-color: var(--main-area-3-color);
+  height: 6.14rem;
+  border-top: 1px dashed var(--main-black-gray-color);
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "when from to"
+                       "when-d from-d to-d"; 
+}
+.when-info{
+  grid-area: when;
+  border-right: 1px dashed var(--main-black-gray-color) ;
+}
+.when-d{
+  grid-area: when-d;
+}
+.from-info{
+  grid-area: from;
+  border-right: 1px dashed var(--main-black-gray-color) ;
+}
+.from-d{
+  grid-area: from-d;
+}
+.to-info{
+  grid-area: to;
+  height: 21px;
+}
+.to-d{
+  grid-area: to-d;
+}
+.when-d,.from-d,.to-d{
+  font-family:var(--main-font-Fira);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--main-area-3-whe-d-color);
+  
+}
+/**********************************
+*         area-4
+************************************/
+.div-area-4{
+  background-color: var(--main-area-4-color);
+  height: 35%;
+  border-top: 1px dashed var(--main-black-gray-color) ;
+}
+
+.ticket{
+  grid-area: ticket;
+}
+.img{
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 2rem 0 0 2rem;
+}
+.ticket-code{
+  grid-area: ticket-code;
+}
+.code{
+  color: var(--main-black-color);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: var(--main-font-Fira);
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}

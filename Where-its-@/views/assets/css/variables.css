@@ -1,0 +1,39 @@
+  
+/*********************
+    Google-fonts
+**********************/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Sansita&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&family=Sansita&display=swap');
+
+:root{
+    /*color-var */
+
+--main-white-color:#ffffff;
+--main-gray-one-color:#D0D0D0;;
+--main-gray-two-color:rgba(255, 255, 255, 0.8);
+--main-background-body:#E5E5E5;
+--main-bgc-where-color:rgba(0, 0, 0, 0.03);
+--main-area-3-color:rgba(0, 0, 0, 0.06);
+--main-area-4-color:rgba(0, 0, 0, 0.12);
+--main-black-gray-color:rgba(0, 0, 0, 0.4);
+--main-black-color:rgba(0, 0, 0, 0.7);
+--main-area-3-whe-d-color:rgba(0, 0, 0, 0.6);
+--main-pink-color:#F56B9A;
+--main-green-color:#37AEAB;
+--main-dark-blue-color:#231F42;
+--main-darklight-blue-color:rgb(74, 69, 123);
+--main-admin-bg-color :#19162e;
+--main-orange-color:#F39440;
+
+
+
+
+--main-font-Sansita :'Sansita', cursive;
+--main-font-Fira :'Fira Sans', sans-serif;
+--main-font-Fira-600 :'Fira Sans', sans-serif;
+
+}

@@ -1,0 +1,102 @@
+@import url('../css/variables.css');
+html body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .title{
+    text-align: center;
+  }
+  
+  .single-ticket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-dark-blue-color);
+    color: var(--main-white-color);
+    text-align: center;
+  }
+  .event-ticket-article { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--main-font-Fira);
+    font-style: normal;   
+    width: 375px;
+    height: 667px;
+    
+  }
+  .event-to-order{ 
+    font-family: var(--main-font-Fira);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--main-gray-two-color);
+    padding-top: 5.2rem;
+  
+  }
+  .show-event-name{ 
+    font-family: var(--main-font-Sansita);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: var(--main-pink-color);
+     padding-top: 1.6rem;
+  }
+  .show-event-date-time {
+  font-family: var(--main-font-Fira);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: var(--main-green-color);
+  padding-top: 0.5rem;
+  }
+  .show-event-place{ 
+    font-family: var(--main-font-Fira);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color:var(--main-gray-two-color);
+    padding-top: 0.5rem;
+  }
+  .show-event-price{
+    font-family:var(--main-font-Fira);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--main-white-color);
+    text-shadow: 1px 1px 0px var(--main-pink-color);
+    padding-top: 6.2rem;
+    padding-bottom: 5.2rem;
+  }
+  .buyTicket { 
+  width: 310px;
+  height: 60px;
+  font-family: var(--main-font-Fira);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: var(--main-green-color);
+  color: var(--main-white-color);
+  border-radius: 0.7rem;
+  }
+
+  dl,ol,ul{
+    list-style: none !important;
+    margin-left: 0rem;
+    padding-left: 1.3rem;
+}

@@ -1,0 +1,115 @@
+@import url('../css/variables.css');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--main-darklight-blue-color);
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"header . "
+                        ". main";          
+
+ }
+.area-nav{
+    grid-area: header;
+    margin:1rem; 
+}
+.area-main{
+    grid-area: main;
+   display: grid;
+   grid-template-columns: 2fr 1fr ;
+   grid-template-areas: "table aside "
+                        "table .";
+   column-gap: 1.1rem;
+   line-height: 2.5rem;
+   margin-right: 5rem;
+}
+.section-table{
+    grid-area: table;
+    border: 2px solid var(--main-black-gray-color);    
+}
+.section-aside{
+    grid-area: aside;
+    border: 2px solid var(--main-black-gray-color);   
+}
+  .section-table, .section-aside {
+    background-color: var(--main-dark-blue-color);
+    color: var(--main-white-color);
+    padding: 1rem;
+}
+
+table {
+    width:100%;
+    padding:0.5rem;
+}
+thead{
+    text-transform: uppercase;
+    color: var(--main-pink-color);
+    font-family: var(--main-font-Fira);
+    font-size: 14px;
+    line-height: 31px;
+    margin: 10px 5px;
+}
+th{
+    text-align:left;
+}
+
+.aside-head2{
+    color: var(--main-pink-color);
+    font-family: var(--main-font-Fira);
+    font-size: 20px;
+    line-height: 31px;
+    margin: 10px 5px;
+}
+
+.halv-size-input1>input{
+    width: 100%;
+    height: 2.6rem;
+    margin: 0.5rem 0;
+    background-color: var(--main-dark-blue-color);
+    border-radius: 3px;
+    border: 1px solid var(--main-gray-two-color);
+    box-sizing: border-box;
+    font-family: var(--main-font-Fira);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--main-gray-one-color);
+    padding-left: 20px;
+}
+.halv-size-input2{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "btnFrom btnTo "
+                        "btnTickets btnPrice"
+                        "btnAdd .";
+                        grid-template-rows:auto;
+    column-gap: 1.1rem;
+    row-gap: 0.5rem;                 
+}
+.btn-from,.btn-to,.btn-ticket,.btn-price,.btn-add,#logout{
+    height: 2.6rem;
+    margin: 0.5rem 0;/**/
+    background-color: var(--main-dark-blue-color);
+    border-radius: 3px;
+    border: 1px solid var(--main-gray-two-color);
+    box-sizing: border-box;
+    width: 100%;
+    font-family: var(--main-font-Fira);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--main-gray-one-color);
+    padding-left: 20px;
+}
+.btn-add,#logout{
+    padding-left: 0px;
+    background-color: var(--main-pink-color);
+    color: var(--main-white-color);
+}

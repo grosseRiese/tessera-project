@@ -1,0 +1,87 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "event_name": "Lasse-Stefanz",
+      "suite": "Kjell Härnqvistsalen",
+      "date": "21 Mar",
+      "from_time": "19:00",
+      "to_time": "21:00",
+      "ticket_price": 350,
+      "event_tickets_quantity": 298,
+      "sold_tickets": 2
+    },
+    {
+      "id": 2,
+      "event_name": "Klubb Untz",
+      "suite": "Din favoritkällare",
+      "date": "10 Apr",
+      "from_time": "22:00",
+      "to_time": "du tröttnar",
+      "ticket_price": 99,
+      "event_tickets_quantity": 108,
+      "sold_tickets": 2
+    },
+    {
+      "id": 3,
+      "event_name": "Kajsas kör",
+      "suite": "Götaplatsen",
+      "date": "10 Apr",
+      "from_time": "15:00",
+      "to_time": "16:00",
+      "ticket_price": 99,
+      "event_tickets_quantity": 47,
+      "sold_tickets": 3
+    },
+    {
+      "id": 4,
+      "event_name": "Pelle Trubadur",
+      "suite": "Pubelipubben",
+      "date": "29 Mar",
+      "from_time": "22:00",
+      "to_time": "00:00",
+      "ticket_price": 110,
+      "event_tickets_quantity": 99,
+      "sold_tickets": 1
+    },
+    {
+      "id": 5,
+      "event_name": "Exit Clubb",
+      "suite": "Dj Room",
+      "date": "23 Jul",
+      "from_time": "20:00",
+      "to_time": "00:00",
+      "ticket_price": 120,
+      "event_tickets_quantity": 399,
+      "sold_tickets": 1
+    }
+  ],
+  "users": [
+    {
+      "uuid": "c27f250c-153b-416d-a894-f396910d5e10",
+      "username": "Sam",
+      "password": "$2b$10$6a09ZNjHzr.5v8YrevXkF./jZRSOMumavUXE36rEYOpnLKBBLqhhO",
+      "role": "admin"
+    },
+    {
+      "uuid": "cd129ab5-6940-4222-821b-bd0384968964",
+      "username": "alice",
+      "password": "$2b$10$gIijmpHK0aQBM0R8IstfSeY5Rkkp1uGvpJcNl8/7jHW59MqBkafzK",
+      "role": "staff"
+    }
+  ],
+  "ticket": [
+    {
+      "event_name": "Kajsas kör",
+      "ticketNumber": "MN32JX6D"
+    },
+    {
+      "event_name": "Klubb Untz",
+      "ticketNumber": "328ETZUB"
+    },
+    {
+      "event_name": "Lasse-Stefanz",
+      "ticketNumber": "6RJI5LUG"
+    }
+  ]
+}
