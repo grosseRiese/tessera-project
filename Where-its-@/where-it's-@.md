@@ -36,13 +36,13 @@ Inlämning sker via Github och Learnpoint. Ladda upp ditt projekt på Github. G�
 
 **{
 	"username":"Sam",
-	"password":"zam123",
+	"password":"pwd123",
 	"role":"admin"
 }**
 
 **{
 	"username":"alice",
-	"password":"zam123",
+	"password":"pwd123",
 	"role":"staff"
 }**
 	
