@@ -22,6 +22,7 @@ router.post('/login', async (req, res) => {
         const isAMatch = await matchPassword(body.password, user.password);
         console.log('isAMatch: ', isAMatch);
         if (user && isAMatch) {
+            // create and assign a token
             const token = jwt.sign({ uuid: user.uuid }, process.env.TOKEN_SECRET, {
                 expiresIn: 1365000 //Expires in 6h
             });
@@ -65,6 +66,7 @@ router.post('/register', async (req, res) => {
     console.log(passwordHash);
 
     const uuid = uuidv4();
+    // const userCreated = await addUser(uuid, body.username, passwordHash); body-username: is was set i db already!
     const userCreated = await addUser(uuid,passwordHash);
 
     if (userCreated) {

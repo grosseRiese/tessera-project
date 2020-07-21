@@ -34,15 +34,3 @@ Inlämning sker via Github och Learnpoint. Ladda upp ditt projekt på Github. G�
 
 **Inlämning senast:** 5/6 23:59
 
-**{
-	"username":"Sam",
-	"password":"pwd123",
-	"role":"admin"
-}**
-
-**{
-	"username":"alice",
-	"password":"pwd123",
-	"role":"staff"
-}**
-	

@@ -30,8 +30,8 @@
       "from_time": "15:00",
       "to_time": "16:00",
       "ticket_price": 99,
-      "event_tickets_quantity": 47,
-      "sold_tickets": 3
+      "event_tickets_quantity": 44,
+      "sold_tickets": 7
     },
     {
       "id": 4,
@@ -41,8 +41,8 @@
       "from_time": "22:00",
       "to_time": "00:00",
       "ticket_price": 110,
-      "event_tickets_quantity": 98,
-      "sold_tickets": 2
+      "event_tickets_quantity": 99,
+      "sold_tickets": 1
     },
     {
       "id": 5,
@@ -82,6 +82,10 @@
     {
       "event_name": "Lasse-Stefanz",
       "ticketNumber": "6RJI5LUG"
+    },
+    {
+      "event_name": "Kajsas kör",
+      "ticketNumber": "KS64MVPP"
     }
   ]
 }

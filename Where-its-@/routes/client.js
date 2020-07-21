@@ -1,7 +1,8 @@
 const {Router} = require('express');
 const router = new Router();
-const {allEvents, getEventByName, checkTicket, addTicket, ticketsLeft,getEventName} = require('../models/database-functions');
-const {genereteTicket} = require('../models/hashPassword');
+const { allEvents, getEventByName, checkTicket,
+        addTicket, ticketsLeft, getEventName } = require('../models/database-functions');
+const { genereteTicket } = require('../models/hashPassword');
 
 router.get('/getAllEvents', async (req,res)=>{
        let resObj = {
@@ -45,10 +46,10 @@ router.post('/buyTicket', async (req,res)=>{
 
     if (availableEvent.event_tickets_quantity !== 0){
            let ticketNum = await genereteTicket();
-           let addedTicket =  await addTicket(ticketNum, availableEvent);
+           let addedTicket =  await addTicket(ticketNum, availableEvent);//availableEvent[0].event_name
             console.log('Ticket added to db', addedTicket);
             
-           let left = await ticketsLeft(availableEvent);
+           let left = await ticketsLeft(availableEvent);//availableEvent[0].event_name
             console.log('Ticket ordered', left);
             resObj = {
                 availableEvent   : availableEvent,
