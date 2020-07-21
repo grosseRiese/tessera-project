@@ -34,7 +34,7 @@ Inlämning sker via Github och Learnpoint. Ladda upp ditt projekt på Github. G�
 
 **Inlämning senast:** 5/6 23:59
 
-**{*
+**{
  * usernam : alice
  * password: pwd123,
  * role    : staff
@@ -42,4 +42,4 @@ Inlämning sker via Github och Learnpoint. Ladda upp ditt projekt på Github. G�
   * usernam : Sam
   * password: pwd123,
   * role    : admin
-**}*
+}**
